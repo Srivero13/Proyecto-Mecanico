@@ -93,6 +93,26 @@ namespace Proyecto_Mecanico.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cash_ratio_1024x512 {
+            get {
+                object obj = ResourceManager.GetObject("cash-ratio-1024x512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Commons_QR_code {
+            get {
+                object obj = ResourceManager.GetObject("Commons_QR_code", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap help_icon_26 {
             get {
                 object obj = ResourceManager.GetObject("help-icon-26", resourceCulture);
