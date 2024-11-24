@@ -1,1 +1,1 @@
-Funcional al 75%, necesito mas tiempo para aumentar cosas y pulir diseños.
+Funcional :)
