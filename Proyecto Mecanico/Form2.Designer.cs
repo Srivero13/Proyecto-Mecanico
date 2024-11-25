@@ -36,9 +36,11 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            label5 = new Label();
+            labelModel = new Label();
             panel1 = new Panel();
+            labelYear = new Label();
+            labelEngine = new Label();
+            labelManufacturer = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -134,34 +136,58 @@
             label4.TabIndex = 8;
             label4.Text = "Otro";
             // 
-            // textBox1
+            // labelModel
             // 
-            textBox1.Enabled = false;
-            textBox1.Location = new Point(149, 32);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(270, 23);
-            textBox1.TabIndex = 9;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Location = new Point(30, 35);
-            label5.Name = "label5";
-            label5.Size = new Size(92, 15);
-            label5.TabIndex = 10;
-            label5.Text = "Numero de VIN:";
+            labelModel.AutoSize = true;
+            labelModel.BackColor = Color.Transparent;
+            labelModel.Location = new Point(64, 41);
+            labelModel.Name = "labelModel";
+            labelModel.Size = new Size(48, 15);
+            labelModel.TabIndex = 10;
+            labelModel.Text = "Modelo";
             // 
             // panel1
             // 
             panel1.BackColor = Color.DarkGray;
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(labelManufacturer);
+            panel1.Controls.Add(labelEngine);
+            panel1.Controls.Add(labelYear);
+            panel1.Controls.Add(labelModel);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(519, 80);
             panel1.TabIndex = 11;
+            // 
+            // labelYear
+            // 
+            labelYear.AutoSize = true;
+            labelYear.BackColor = Color.Transparent;
+            labelYear.Location = new Point(64, 10);
+            labelYear.Name = "labelYear";
+            labelYear.Size = new Size(29, 15);
+            labelYear.TabIndex = 11;
+            labelYear.Text = "Año";
+            // 
+            // labelEngine
+            // 
+            labelEngine.AutoSize = true;
+            labelEngine.BackColor = Color.Transparent;
+            labelEngine.Location = new Point(64, 56);
+            labelEngine.Name = "labelEngine";
+            labelEngine.Size = new Size(40, 15);
+            labelEngine.TabIndex = 12;
+            labelEngine.Text = "Motor";
+            // 
+            // labelManufacturer
+            // 
+            labelManufacturer.AutoSize = true;
+            labelManufacturer.BackColor = Color.Transparent;
+            labelManufacturer.Location = new Point(64, 25);
+            labelManufacturer.Name = "labelManufacturer";
+            labelManufacturer.Size = new Size(40, 15);
+            labelManufacturer.TabIndex = 13;
+            labelManufacturer.Text = "Marca";
             // 
             // Form2
             // 
@@ -200,8 +226,10 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private Label label5;
+        private Label labelModel;
         private Panel panel1;
+        private Label labelManufacturer;
+        private Label labelEngine;
+        private Label labelYear;
     }
 }

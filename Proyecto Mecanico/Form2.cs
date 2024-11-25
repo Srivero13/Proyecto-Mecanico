@@ -12,10 +12,13 @@ namespace Proyecto_Mecanico
 {
     public partial class Form2 : Form
     {
-        public Form2(string msg)
+        public Form2(string manufacturer, int year, string model, string engine)
         {
             InitializeComponent();
-            textBox1.Text= msg;
+            labelManufacturer.Text = $"Fabricante: {manufacturer}";
+            labelYear.Text = $"Año: {year}";
+            labelModel.Text = $"Modelo: {model}";
+            labelEngine.Text = $"Motor: {engine}";
         }
 
         private void Form2_Load(object sender, EventArgs e)
