@@ -43,7 +43,7 @@
             // 
             pictureBox1.BackgroundImage = Properties.Resources.Screenshot_2024_11_14_213454;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(12, 58);
+            pictureBox1.Location = new Point(12, 91);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(490, 296);
             pictureBox1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 40);
+            label1.Location = new Point(12, 73);
             label1.Name = "label1";
             label1.Size = new Size(202, 15);
             label1.TabIndex = 1;
@@ -61,7 +61,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 372);
+            label2.Location = new Point(12, 399);
             label2.Name = "label2";
             label2.Size = new Size(296, 15);
             label2.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 390);
+            textBox1.Location = new Point(12, 417);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(352, 23);
             textBox1.TabIndex = 3;
@@ -77,7 +77,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 425);
+            label3.Location = new Point(12, 452);
             label3.Name = "label3";
             label3.Size = new Size(249, 15);
             label3.TabIndex = 4;
@@ -85,14 +85,14 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(12, 443);
+            textBox2.Location = new Point(12, 470);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(352, 23);
             textBox2.TabIndex = 5;
             // 
             // button1
             // 
-            button1.Location = new Point(186, 524);
+            button1.Location = new Point(226, 555);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 6;
@@ -103,7 +103,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(127, 499);
+            checkBox1.Location = new Point(167, 530);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(197, 19);
             checkBox1.TabIndex = 7;

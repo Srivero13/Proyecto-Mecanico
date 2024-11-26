@@ -1,5 +1,6 @@
 using Proyecto_Mecanico.App_Data;
 
+
 namespace Proyecto_Mecanico
 {
     internal static class Program
@@ -14,6 +15,7 @@ namespace Proyecto_Mecanico
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+
         }
     }
 }

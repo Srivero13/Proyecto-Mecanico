@@ -8,15 +8,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Proyecto_Mecanico
 {
-    public partial class Form3 : Form
+    public partial class Form3 : MaterialForm
     {
+        private readonly MaterialSkinManager materialSkinManager;
         public Form3()
         {
             InitializeComponent();
+            this.Text = "Ubicacion";
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(
+                Primary.Blue600, 
+                Primary.Blue700,   
+                Primary.Blue200,  
+                Accent.Orange700,  
+                TextShade.WHITE  
+            );
             button1.Visible=false;
         }
 

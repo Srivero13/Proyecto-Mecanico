@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             pictureBox1 = new PictureBox();
@@ -36,20 +35,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(0, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(517, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Un mecanico ya se encuentra en camino, por favor aguarde.";
-            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 100);
+            label2.Location = new Point(12, 141);
             label2.Name = "label2";
             label2.Size = new Size(98, 15);
             label2.TabIndex = 1;
@@ -93,7 +82,6 @@
             Controls.Add(pictureBox1);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
             Name = "Form5";
             Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -102,8 +90,6 @@
         }
 
         #endregion
-
-        private Label label1;
         private Label label2;
         private Label label3;
         private PictureBox pictureBox1;

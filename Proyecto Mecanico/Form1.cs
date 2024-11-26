@@ -3,20 +3,36 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace Proyecto_Mecanico
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialForm
     {
+
+        private readonly MaterialSkinManager materialSkinManager;
+
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Auxilio Mecánico";
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(
+                Primary.Blue600,  
+                Primary.Blue700,  
+                Primary.Blue200,  
+                Accent.Orange700, 
+                TextShade.WHITE   
+            );
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+
 
         private async void button2_Click(object sender, EventArgs e)
         {
@@ -37,11 +53,12 @@ namespace Proyecto_Mecanico
                 MessageBox.Show("El VIN ingresado no es válido o no se pudo decodificar.", "VIN inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            
+
             Form2 obj = new Form2(result.Manufacturer, int.Parse(result.Year), result.Model, result.Engine);
             this.Hide();
             obj.FormClosed += (s, args) => this.Close();
             obj.Show();
+
         }
 
         private async Task<(bool IsValid, string Manufacturer, string Year, string Model, string Engine)> DecodificarVinConApi(string vin)
