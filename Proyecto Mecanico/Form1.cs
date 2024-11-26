@@ -21,11 +21,11 @@ namespace Proyecto_Mecanico
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.Blue600,  
-                Primary.Blue700,  
-                Primary.Blue200,  
-                Accent.Orange700, 
-                TextShade.WHITE   
+                Primary.Blue600,
+                Primary.Blue700,
+                Primary.Blue200,
+                Accent.Orange700,
+                TextShade.WHITE
             );
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -94,6 +94,36 @@ namespace Proyecto_Mecanico
                 MessageBox.Show($"Ocurrió un error al conectar con la API: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return (false, "Desconocido", "Desconocido", "Desconocido", "Desconocido");
+        }
+       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string mensaje = "El número de VIN se encuentra en los siguientes lugares típicos de un vehículo:\n\n" +
+                     "1. En el tablero del vehículo, visible a través del parabrisas (lado del conductor).\n" +
+                     "2. En el marco interior de la puerta del conductor, cerca de la bisagra o el borde.\n" +
+                     "3. En algunos vehículos, se encuentra en el compartimento del motor o cerca del motor.\n\n" +
+                     "Consulta las imágenes para más detalles.";
+
+            MessageBox.Show(mensaje, "Cómo localizar el VIN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Form formImagenes = new Form
+            {
+                Text = "Ubicación del VIN",
+                Size = new Size(600, 400),
+                StartPosition = FormStartPosition.CenterScreen
+            };
+            PictureBox pictureBox = new PictureBox
+            {
+                SizeMode = PictureBoxSizeMode.StretchImage,
+                Dock = DockStyle.Fill
+            };
+
+            using (MemoryStream ms = new MemoryStream(Properties.Resources.VIN_Locations))
+            {
+                pictureBox.Image = Image.FromStream(ms);
+            }
+            formImagenes.Controls.Add(pictureBox);
+
+            formImagenes.ShowDialog();
         }
     }
 

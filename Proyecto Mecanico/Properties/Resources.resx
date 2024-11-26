@@ -145,4 +145,7 @@
   <data name="cash-ratio-1024x512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cash-ratio-1024x512.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="VIN_Locations" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VIN_Locations.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

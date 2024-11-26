@@ -149,5 +149,15 @@ namespace Proyecto_Mecanico.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] VIN_Locations {
+            get {
+                object obj = ResourceManager.GetObject("VIN_Locations", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
